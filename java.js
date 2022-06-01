@@ -32,24 +32,27 @@ else ("Error: Ingresar nombre y apellido")
                     
 let entrada = prompt ("¿Que desea llevar?");
 
+
+
 while (entrada != "ESC"){
   switch (entrada){
     case "coca": 
-          alert ("nos queda pepsi");
-          break;
+        alert ("nos queda pepsi");
+        break;
     case "sprite":
-          alert ("nos queda 7up");
-          break;
+        alert ("nos queda 7up");
+        break;
     case "fanta":
-      alert ("nos queda mirinda");
-      break;
-      case "shueps":
-         alert ("nos queda agua tonica linea pepsi");
+        alert ("nos queda mirinda");
+        break;
+    case "shueps":
+        alert ("nos queda agua tonica linea pepsi");
         break;
     default:
-          alert ("Siguiente");
-          break; 
+        alert ("Siguiente");
+        break; 
   }
-  entrada = prompt ("Ingresar un nombre");
+  entrada = prompt ("Que desea llevar");
+  break;
 } 
 
