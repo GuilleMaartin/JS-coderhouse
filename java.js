@@ -1,4 +1,4 @@
-
+//
 
 let number = prompt ("inserte numero")
 
@@ -14,20 +14,20 @@ else if  (number >= 35 && number <=67) {
 else if (number >=68 && number <= 100){
   console.log ("deberias chequear tu edad");
 }
-
-                    //
-
-let nombre = prompt ("ingrese su nombre")
-
-let apellido = prompt ("ingrese su apellido")
-
-if ((nombre != "") && (apellido != "")){
-  alert ("Nombre: " +  nombre + 
-   " Apellido : " + apellido )
-} 
-else ("Error: Ingresar nombre y apellido")
-
-                    //
+//
+//                    //
+//
+//let nombre = prompt ("ingrese su nombre")
+//
+//let apellido = prompt ("ingrese su apellido")
+//
+//if ((nombre != "") && (apellido != "")){
+//  alert ("Nombre: " +  nombre + 
+//   " Apellido : " + apellido )
+//} 
+//else ("Error: Ingresar nombre y apellido")
+//
+//                    //
 
                     
 let entrada = prompt ("¿Que desea llevar?");
@@ -53,6 +53,19 @@ while (entrada != "ESC"){
         break; 
   }
   entrada = prompt ("Que desea llevar");
-  break;
+  
 } 
+
+
+let producto = prompt ("Que desea llevar?")
+let contador = 0
+
+while (producto != "camara") {
+    contador++
+    alert ("Necesita algo mas?")
+    producto = prompt ("Que otra cosa, decime?")
+} 
+alert (" No nos queda camaras en este momento")
+
+
 
