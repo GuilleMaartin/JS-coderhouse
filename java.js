@@ -12,3 +12,7 @@
             } 
 
             leerMas()
+
+var turco = ["menen", "javier", "tomas"]
+
+turco ([0])

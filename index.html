@@ -6,41 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <!-- <script src="java.js"></script>    -->
-    <script src="tomi.js"></script>
-    <!-- <link rel="stylesheet" href="style/class.css"> -->
+ <script src="tomi.js"></script> 
+    <link rel="stylesheet" href="style/class.css"> 
 </head>
 <body>
-    <form name="calculator">
-        <h3>Calculadora</h3>
-        <p>Haz algun calculo para ver el resultado.</p>
-        <input type="textfield" name="ans" value="">
-        <br>
-        <input type="button" value="1" >
-        <input type="button" value="2" >
-        <input type="button" value="3" >
-        <input type="button" >
-            <!-- <article id="contenido">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit modi consectetur dolor dignissimos magnam ipsam, molestias voluptatibus asperiores cum pariatur aperiam! Incidunt neque, laboriosam voluptate illum nobis beatae ipsam provident?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit modi consectetur dolor dignissimos magnam ipsam, molestias voluptatibus asperiores cum pariatur aperiam! Incidunt neque, laboriosam voluptate illum nobis beatae ipsam provident?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit modi consectetur dolor dignissimos magnam ipsam, molestias voluptatibus asperiores cum pariatur aperiam! Incidunt neque, laboriosam voluptate illum nobis beatae ipsam provident?</p>
-            </article>
-
-            <button id="leer-mas">Mostrar mas</button> -->
-        <br>
-        <input type="button" value="4" >
-        <input type="button" value="5" >
-        <input type="button" value="6" >
-        <input type="button" value="-" >
-        <br>
-        <input type="button" value="7" >
-        <input type="button" value="8" >
-        <input type="button" value="9" >
-        <input type="button" value="*" >
-        <br>
-        <input type="button" value="0" >
-        <input type="reset" value="c">
-        <input type="button" value="/" >
-        <input type="button" value="=">
+    <div class="container">
+        <h1>Bienvenida a la libreria de las preposiciones </h1>
+        <form method="get" id="">
+            <label for="">Palabras:</label>
+            <select name="" id="">
+               <option value="">A</option>
+               <option value="">ante</option>
+               <option value="">bajo</option>
+               <option value="">con</option>
+               <option value="">contra</option>
+               <option value="">de</option>
+               <option value="">desde</option>
+               <option value="">en</option>
+               <option value="">entre</option>
+               <option value="">hacia</option>
+               <option value="">hasta</option>
+               <option value="">durante</option>
+               <option value="">mediante</option>
+               <option value="">para</option>
+               <option value="">por</option>
+               <option value="">pro</option>
+               <option value="">sin</option>
+               <option value="">so</option>
+               <option value="">sobre</option>
+               <option value="">tras</option>
+               <option value="">versus</option>
+               <option value="">via</option>
+            </select>
         </form>
+        <footer>
+            <div><h2 onclick="listarPalabras()">lista de palabras</h2></div>
+            <div><h2 onclick="agregarPalabra()">agregar palabras</h2></div>
+            <div><h2 onclick="buscarPalabra()">buscar palabras</h2></div>
+            <div><h2 onclick="quitarPalabra()">quitar palabras</h2></div>
+        </footer>
+    </div>
+
+    <h2>Se encuentra disponible la calculadora con la funcion <span>calculadora()</span></h2>
 </body>
 </html>

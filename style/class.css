@@ -4,26 +4,46 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: auto;
 }
-article{
-    width: 400px;
-    background-color: #fff;
-    padding: 20px 20px 0;
-    font-size: 18px;
-    max-height: 270px;
-    overflow: hidden;
-    transition: max-height 1s;
-    text-align: justify;
-    margin-top: 20px;
+.container{
+    background-color: #222020ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid darkgray;
+    width: 30%;
+    height: auto;
+    border-radius: 1rem;
+    min-width: 350px;
+}
+.container h1{
+    margin-left: 1rem;
+}
+form select{width: 100%;margin: .5rem;}
+footer div{
+    align-content: center;
+    margin: 1rem;
+    background: rgb(112, 40, 40);
+    border-radius: 1rem;
+}
+footer div:nth-child(2){
+    background-color: #5542ce;
+}
+footer div:nth-child(3){
+    background-color: #438f99;
+}
+footer div:nth-child(4){
+    background-color: #8d347a;
+}
+footer div h2{
+    color: #f1f1f1;
+    padding: 1rem;
+    text-transform: uppercase;
 }
 
-p{
-    margin-bottom: 16px;
-}
 
-article.abierto{
-    max-height: 1000px;
-}
 
 button{
     background-color: #0e0b22;

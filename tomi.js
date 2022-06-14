@@ -20,66 +20,120 @@
 //        prompt ("¿desea repetirlo?:")
 //        break;
 //}
-//function calculadora(parametro1, parametro2, operacion){
-//    switch(operacion){
-//        case "+":
-//            return parametro1 + parametro2;
-//            break;
-//        case "-":
-//            return parametro1 - parametro2;
-//            break;
-//        case "/":
-//            return parametro1 / parametro2;
-//            break;
-//        case "*":
-//            return parametro1 * parametro2;
-//            break;
-//        default:
-//            return 0;
-//            break;
-//    }
-//}
-//calculadora()
-
-
-
-function suma (){
-    let dato = 0;
-    dato = 8 + 9;
-    alert(dato)
-}
-suma()
-
-function menos(){
-    let resta = 0;
-    resta = 4-3;
-    alert(resta)
-}
-menos()
-
 
 function calculadora(parametro1, parametro2, operacion){
-
-    switch (operacion){
+    switch(operacion){
         case "+":
             return parametro1 + parametro2;
             break;
         case "-":
-                return parametro1 - parametro2;
-                break;
+            return parametro1 - parametro2;
+            break;
         case "/":
             return parametro1 / parametro2;
             break;
         case "*":
             return parametro1 * parametro2;
             break;
-        default :
+        default:
             return 0;
-            break;   
+            break;
+    }
+}
+calculadora()
+
+
+
+// function suma (){
+//     let dato = 0;
+//     dato = 8 + 9;
+//     alert(dato)
+// }
+// suma()
+
+// function menos(){
+//     let resta = 0;
+//     resta = 4-3;
+//     alert(resta)
+// }
+// menos()
+
+
+// function calculadora(parametro1, parametro2, operacion){
+
+//     switch (operacion){
+//         case "+":
+//             return parametro1 + parametro2;
+//             break;
+//         case "-":
+//                 return parametro1 - parametro2;
+//                 break;
+//         case "/":
+//             return parametro1 / parametro2;
+//             break;
+//         case "*":
+//             return parametro1 * parametro2;
+//             break;
+//         default :
+//             return 0;
+//             break;   
+// }
+
+// }
+
+// alert (calculadora());
+
+
+//const paises = [ 'argentina', 'nicaragua', 'madagascar', 'vietnam', 'cuba'];
+//
+//
+//let resutlado = paises[1 ]+ paises [3];
+//
+//
+//
+//function recorrerArray(){
+//    console.table(paises)
+//    for (let i = 0; i < paises.length; i++) {
+//        console.log (paises[i])   
+//    }
+//}
+//
+//const musica = ["spinetta", "calamaro", "monamour", "dojacat", "tito el bambino"]
+//
+//function llamandoaMusica(){
+//    console.table(musica)
+//    for (let i = 0; i < musica.length; i++) {
+//        console.log(musica[i])
+//    }
+//}
+
+
+
+
+
+
+const palabra = ["A", "Ante", "Bajo", "Con", "Contra", "De", "Desde"]
+//"En", "Entre","Hacia", "Hasta", "Durante", "Mediante", "Para", "Por", "Pro", 
+//"Sin", "So", "Sobre", "Tras", "Versus", "Via"]
+
+function listarPalabras(){
+    for (let i = 0; i < palabra.length; i++) {
+        console.log(palabra[i])
+    }
+} 
+
+function agregarPalabra(){
+    let agregar = prompt ("Que pais desea agregar: ")
+        alert("se ha agreagado el pais : " + agregar)
+       palabra.unshift(agregar)
 }
 
+function quitarPalabra(){
+    debugger
+        let mensaje = prompt("Que palabra desea eliminar: ")
+        let buscador = palabra.indexOf(mensaje);
+        let resultado = palabra.splice(buscador, 1);
+            alert ("Ha eliminado la palabra: " + resultado);
 }
-
-alert (calculadora());
-
+ 
 
