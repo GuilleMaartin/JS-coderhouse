@@ -128,6 +128,16 @@ function agregarPalabra(){
        palabra.unshift(agregar)
 }
 
+function buscarPalabra(){
+    let mensaje = prompt("Que palabra desea buscar: ")
+    let resultado = palabra.includes(mensaje)
+        if  (resultado) {
+            alert ("Se encontro la palabra con exito: " + mensaje)
+        } else {
+            alert ("No se encontro la palabra: " + mensaje)
+        } 
+}
+
 function quitarPalabra(){
     debugger
         let mensaje = prompt("Que palabra desea eliminar: ")
@@ -137,3 +147,10 @@ function quitarPalabra(){
 }
  
 
+const eliminar = (pala) => {
+     let mensaje = prompt ("Que palabra desea eliminar: ");
+    let indice = palabra.indexOf(mensaje);
+        if (indice != -1){
+            palabra.splice(indice, 1)
+        }
+}
